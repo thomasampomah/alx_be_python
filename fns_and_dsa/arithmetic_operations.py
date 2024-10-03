@@ -13,10 +13,11 @@ def perform_operation(num1, num2, operation):
 
 def perform_operation(num1, num2, operation):
     j = "divide" == num1 / num2
-    if num2 > 0:
-        print(j)
+    if num2 == 0:
+        print("Not divisible by zero")
     else:
-        print("Not divisible by zero" )
+        print(j)
+        
 
 
 
