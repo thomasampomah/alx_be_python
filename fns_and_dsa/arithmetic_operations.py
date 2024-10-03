@@ -4,7 +4,7 @@ def perform_operation(num1, num2, operation):
     return "add"
 
 def perform_operation(num1, num2, operation):
-    y = "substract" == num1 - num2
+    y = "subtract" == num1 - num2
     return y
 
 def perform_operation(num1, num2, operation):
