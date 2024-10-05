@@ -15,12 +15,12 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Enter add item name: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
             print(shopping_list)
             
         elif choice == '2':
-            item = input("Enter remove item name: ")
+            item = input("Enter item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(shopping_list)
@@ -29,7 +29,7 @@ def main():
         
         elif choice == '3':
             print(shopping_list)
-            
+
         elif choice == '4':
             print("Goodbye!")
             break
