@@ -3,9 +3,13 @@ class BankAccount:
         self.account_balance = account_balance
 
     def deposit(self,amount):
-        self.account_balance += amount
-        print(f"Deposited: ${amount:.2f}")
-    
+        if amount > 0:
+            self.account_balance += amount
+            print(f"Deposited: ${amount:.1f}")
+        else:
+            print("Deposit amount must be positive.")
+
+
     def withdraw(self,amount):
         self.account_balance -= amount
         if self.account_balance > amount:
