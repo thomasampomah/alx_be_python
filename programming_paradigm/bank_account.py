@@ -4,11 +4,11 @@ class BankAccount:
 
     def deposit(self,amount):
         if amount > 0:
-            print(f"Deposited: ${amount:.1f}")
+            self.account_balance += amount
+            return(f"Deposited: ${amount:.1f}")
         else:
             print("Deposit amount must be positive.")
-        self.account_balance += amount
-        return self.account_balance
+        
 
 
     def withdraw(self,amount):
